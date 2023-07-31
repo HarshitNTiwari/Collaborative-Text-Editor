@@ -16,17 +16,19 @@ To maintain persistent storage for the documents, a MongoDB database is used whi
 
 You need to have Node.js and npm installed to run this application. Also, setup your environment variables like the PORT on which you would like the server to run and your MongoDB database URI.
 
-To start the server, navigate to the `server` directory, and run the start command:
+To start the server, navigate to the `server` directory, install the dependencies and run the start command:
 
 ```sh
 cd server
+npm install
 npm run dev
 ```
 
-This will spin up a nodemon server. Now to start the frontend, navigate to `client` directory and run the start command:
+This will spin up a nodemon server. Now to start the frontend, install the dependencies, navigate to `client` directory and run the start command:
 
 ```sh
 cd client
+npm install
 npm run dev
 ```
 
