@@ -24,7 +24,7 @@ npm install
 npm run dev
 ```
 
-This will spin up a nodemon server. Now to start the frontend, install the dependencies, navigate to `client` directory and run the start command:
+This will spin up a nodemon server. Now to start the frontend, navigate to `client` directory, install the dependencies and run the start command:
 
 ```sh
 cd client
