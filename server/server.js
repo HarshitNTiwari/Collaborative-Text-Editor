@@ -1,16 +1,20 @@
 import { Server } from "socket.io";
 import mongoose from "mongoose";
+import * as dotenv from "dotenv";
 import Document from "./Document.js";
 import otserver from "./ot/server.js";
 
-mongoose.connect("mongodb://127.0.0.1:27017/text-editor-db");
+dotenv.config();
 
+mongoose.connect(process.env.DATABASE_URI);
+
+// instantiating the server
 var otServer = new otserver();
 
 //server instance of socket
 const io = new Server(3001, {
   cors: {
-    origin: "http://localhost:5173", //Port on which client is running
+    origin: process.env.CLIENT_PORT, //Port on which client is running
     methods: ["GET", "POST"],
   },
 });
