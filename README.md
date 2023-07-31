@@ -14,7 +14,7 @@ To maintain persistent storage for the documents, a MongoDB database is used whi
 
 ## Development setup
 
-You need to have Node.js and npm installed to run this application. Also, setup your environment variables like the PORT on which you would like the server to run and your MongoDB database URI.
+You need to have Node.js and npm installed to run this application.
 
 Pull down the source code by forking the git repository and then cloning it. Then navigate to the project directory:
 
@@ -22,6 +22,7 @@ Pull down the source code by forking the git repository and then cloning it. The
 git clone https://github.com/<Your_Username>/Collaborative-Text-Editor.git
 cd Collaborative-Text-Editor
 ```
+Setup your environment variables like the PORT on which you would like the server to run and your MongoDB database URI.
 
 To start the server, navigate to the `server` directory, install the dependencies and run the start command:
 
